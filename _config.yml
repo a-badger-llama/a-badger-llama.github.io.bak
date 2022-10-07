@@ -28,6 +28,7 @@ url: https://a-badger-llama.github.io
 baseurl: /jonathan-fox # the subpath of your site, e.g. /blog
 twitter_username: jekyllrb
 github_username:  jekyll
+excerpt_separator: <!--more-->
 
 # Build settings
 plugins:

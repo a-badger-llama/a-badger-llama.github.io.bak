@@ -1,6 +1,7 @@
 $brand-dark: #040c16;
 $brand-primary: #cc2e37;
 $white: #ddd;
+$off-white: #f8f8f9;
 
 @import "fonts";
 @import "header";
@@ -14,6 +15,11 @@ body {
 
 main {
   min-height: 100vh;
+}
+
+.about-me {
+  background-color: $off-white;
+  min-height: 50vh;
 }
 
 .button {
