@@ -44,7 +44,8 @@ main {
 .post-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem auto 0 auto;
+  justify-content: space-between;
+  margin: 1rem 1rem 0px 0px;
   width: 66%;
 
   .title {
@@ -59,5 +60,5 @@ main {
   justify-content: center;
   height: 30vh;
   margin: 1rem auto 0 auto;
-  width: 30%;
+  width: 40%;
 }
