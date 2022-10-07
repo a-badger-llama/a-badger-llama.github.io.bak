@@ -1,0 +1,54 @@
+.title-banner {
+  background-color: $brand-dark;
+  color: $white;
+  display: flex;
+  font: 3rem Teko;
+  height: 2em;
+  justify-content: center;
+
+  .logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-text {
+    display: inline-block;
+  }
+
+  .logo-img {
+    height: 100%;
+  }
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  font-family: Oswald;
+  justify-content: space-between;
+
+  .call-to-action {
+    margin: 0 2em;
+  }
+
+  .nav-links {
+    align-self: stretch;
+    display: inherit;
+
+    .nav-link {
+      align-items: stretch;
+      display: inline-block;
+
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+
+    a {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      padding: 1.5em 2em;
+    }
+  }
+}

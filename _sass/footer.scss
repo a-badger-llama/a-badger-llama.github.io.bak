@@ -1,0 +1,19 @@
+.footer {
+  background-color: $brand-dark;
+  color: $white;
+  font-size: .9rem;
+  width: 100%;
+  padding: 2em;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact {
+  }
+
+  .footer-description {
+    flex-basis: 50%;
+  }
+}

@@ -1,0 +1,59 @@
+$brand-dark: #040c16;
+$brand-primary: #cc2e37;
+$white: #ddd;
+
+@import "fonts";
+@import "header";
+@import "post-card";
+@import "footer";
+
+body {
+  background-color: $white;
+  position: relative;
+}
+
+.button {
+  background-color: $brand-primary;
+  border: none;
+  border-radius: 15px;
+  color: $white;
+  cursor: pointer;
+  display: block;
+  padding: .5rem 1rem;
+}
+
+.container {
+  display: flex;
+  height: inherit;
+  margin: 0 20vw;
+}
+
+.hero-banner {
+  align-items: center;
+  border: $brand-dark 1px solid;
+  display: flex;
+  justify-content: center;
+  height: 25vh;
+  width: 100%;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto 0 auto;
+  width: 66%;
+
+  .title {
+    flex: 0 0 100%;
+  }
+}
+
+.bulletin {
+  align-items: center;
+  border: $brand-dark 1px solid;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  margin: 1rem auto 0 auto;
+  width: 30%;
+}

@@ -1,0 +1,24 @@
+---
+layout: default.html
+---
+<div class="container">
+  <div class="hero-banner">
+    <h1>Hero banner</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="post-list">
+    <h1 class="title">Here's the latest</h1>
+
+    {%- if site.posts.size > 0 -%}
+      {%- for post in site.posts -%}
+        {%- include post-card.html.liquid post=post -%}
+      {%- endfor -%}
+    {%- endif -%}
+  </div>
+
+  <div class="bulletin">
+    <h1>News Bulletin</h1>
+  </div>
+</div>
