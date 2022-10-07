@@ -12,6 +12,10 @@ body {
   position: relative;
 }
 
+main {
+  min-height: 100vh;
+}
+
 .button {
   background-color: $brand-primary;
   border: none;
