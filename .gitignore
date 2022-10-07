@@ -3,7 +3,3 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-.idea/
-.idea/*
-/.idea/jonathan-fox.iml
-/.idea
