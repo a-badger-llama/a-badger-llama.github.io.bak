@@ -5,4 +5,4 @@ _site
 vendor
 .idea/
 .idea/*
-.idea/jonathan-fox.iml
+/.idea/jonathan-fox.iml
