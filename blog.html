@@ -4,5 +4,10 @@ title: Blog
 nav_order: 3
 ---
 <div class="container">
-  <h1>The Blog</h1>
+  <div class="side-filters">
+    <h1>Search Filters</h1>
+  </div>
+
+  {%- assign posts = site.posts | where: "categories", "blog" -%}
+  {%- include post-list.html.liquid classlist="post-list--index" list_title="Here's the latest" posts=posts -%}
 </div>

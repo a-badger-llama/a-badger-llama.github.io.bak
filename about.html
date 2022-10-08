@@ -48,6 +48,7 @@ image_description: a picture of Jonathan Fox
   </div>
 
   <div class="container">
-    {%- include post-list.html.liquid list_title="Start Here" -%}
+    {%- assign posts = site.posts | where: "categories", "blog" -%}
+    {%- include post-list.html.liquid list_title="Start Here" posts=posts -%}
   </div>
 </div>
