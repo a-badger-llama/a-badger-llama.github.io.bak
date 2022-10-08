@@ -8,15 +8,7 @@ layout: default.html
 </div>
 
 <div class="container">
-  <div class="post-list">
-    <h1 class="title">Here's the latest</h1>
-
-    {%- if site.posts.size > 0 -%}
-      {%- for post in site.posts -%}
-        {%- include post-card.html.liquid post=post -%}
-      {%- endfor -%}
-    {%- endif -%}
-  </div>
+  {%- include post-list.html.liquid classlist="post-list--index" list_title="Here's the latest" -%}
 
   <div class="bulletin">
     <h1>News Bulletin</h1>

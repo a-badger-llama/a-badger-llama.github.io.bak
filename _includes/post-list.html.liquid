@@ -1,0 +1,9 @@
+<div class="{{ include.classlist }} post-list">
+  <h1 class="title">{{ include.list_title }}</h1>
+
+  {%- if site.posts.size > 0 -%}
+    {%- for post in site.posts -%}
+      {%- include post-card.html.liquid post=post -%}
+    {%- endfor -%}
+  {%- endif -%}
+</div>
