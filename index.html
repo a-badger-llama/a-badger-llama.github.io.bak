@@ -3,9 +3,7 @@ layout: default.html
 ---
 <div class="container">
   {%- assign project = site.posts | where: "categories", "hero" | first -%}
-  {%- if project -%}
-    {%- include project-banner.html.liquid project=project -%}
-  {%- endif -%}
+  {%- include project-banner.html.liquid project=project -%}
 </div>
 
 <div class="container">

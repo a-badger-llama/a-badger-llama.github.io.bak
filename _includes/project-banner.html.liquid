@@ -1,3 +1,5 @@
 <div class="project-banner">
-  <h1>{{ project.title }}</h1>
+  {%- if project -%}
+    <h1>{{ project.title }}</h1>
+  {%- endif -%}
 </div>

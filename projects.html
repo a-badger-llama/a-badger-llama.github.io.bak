@@ -1,13 +1,9 @@
 ---
 layout: default.html
 title: Projects
-nav_order: 2
+nav_order: 1
 ---
 <div class="projects-list container">
   {%- assign projects = site.posts | where: "categories", "projects" -%}
-  {%- if projects.size > 0 -%}
-    {%- for project in projects -%}
-      {%- include project-banner.html.liquid project=project -%}
-    {%- endfor -%}
-  {%- endif -%}
+  {%- include project-list.html.liquid projects=projects -%}
 </div>

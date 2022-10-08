@@ -1,0 +1,5 @@
+{%- if projects.size > 0 -%}
+  {%- for project in projects -%}
+    {%- include project-banner.html.liquid project=project -%}
+  {%- endfor -%}
+{%- endif -%}
