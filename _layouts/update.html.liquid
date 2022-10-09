@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: default.html
 excerpt_separator: <!--more-->
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
+<div class="container">
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -25,4 +24,4 @@ excerpt_separator: <!--more-->
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+</div>

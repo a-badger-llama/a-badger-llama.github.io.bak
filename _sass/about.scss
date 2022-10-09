@@ -1,0 +1,19 @@
+.about-me {
+  img {
+    width: 100%;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  .profile-pic {
+    flex: 1;
+    margin-bottom: 4rem;
+  }
+  .about-me--title {
+    flex: 0 0 100%;
+    margin: 1rem 0;
+  }
+  .content {
+    flex: 1;
+  }
+}

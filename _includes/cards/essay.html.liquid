@@ -1,0 +1,9 @@
+<a class="essay-card" href="{{ post.url | relative_url }}">
+  <div class="card-image">
+    <img src="{{ post.image_path }}" alt="post.image_discription">
+  </div>
+  <div class="card-content">
+    <h2 class="title">{{ post.title }}</h2>
+    <p>{{ post.excerpt }}</p>
+  </div>
+</a>

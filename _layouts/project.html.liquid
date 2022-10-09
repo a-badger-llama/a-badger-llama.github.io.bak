@@ -1,3 +1,10 @@
 ---
-layout: default
+layout: default.html
 ---
+<div class="container">
+  {%- assign project=page -%}
+
+  {%- include cards/announcement.html.liquid project=project -%}
+</div>
+
+{% include project-nav.html.liquid %}

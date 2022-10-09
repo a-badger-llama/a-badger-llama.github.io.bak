@@ -1,9 +1,9 @@
-<div class="{{ include.classlist }} post-list">
-  <h1 class="title">{{ include.list_title }}</h1>
-
+<div class="post-list">
   {%- if posts.size > 0 -%}
     {%- for post in posts -%}
-      {%- include post-card.html.liquid post=post -%}
+      {%- assign includes-card = "cards/" | append: post.type | append: ".html.liquid" -%}
+
+      {%- include {{ includes-card }} post=post -%}
     {%- endfor -%}
   {%- endif -%}
 </div>

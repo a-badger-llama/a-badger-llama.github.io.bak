@@ -1,0 +1,54 @@
+@mixin card {
+  background-color: $off-white;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 2px 2px $brand-dark;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+
+  .card-image {
+    width: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .card-content {
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+.card {
+  @include card;
+}
+
+.announcement-card {
+  @include card;
+
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0;
+}
+
+.essay-card {
+  @include card;
+
+  .card-content {
+    width: 60%;
+  }
+}
+
+.narrative-card {
+  @include card;
+}
+
+.update-card {
+  @include card;
+
+  font-size: .75rem;
+
+  .title {
+    margin: 0;
+  }
+}

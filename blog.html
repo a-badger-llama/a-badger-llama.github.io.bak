@@ -3,11 +3,16 @@ layout: default.html
 title: Blog
 nav_order: 3
 ---
+{%- assign posts = site.posts | where: "categories", "blog" -%}
+
 <div class="container">
   <div class="side-filters">
     <h1>Search Filters</h1>
   </div>
 
-  {%- assign posts = site.posts | where: "categories", "blog" -%}
-  {%- include post-list.html.liquid classlist="post-list--index" list_title="Here's the latest" posts=posts -%}
+  <div class="content">
+    <h1>Here's the latest</h1>
+
+    {%- include post-list.html.liquid posts=posts -%}
+  </div>
 </div>

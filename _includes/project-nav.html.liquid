@@ -1,0 +1,20 @@
+<nav class="navbar container">
+  {%- assign default_paths = site.pages | sort: "nav_order" | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+  <div class="progress-bar">
+    Progress Bar
+  </div>
+
+  <ul class="nav-links nav-links--project">
+    {%- for path in page_paths -%}
+      {%- assign my_page = site.pages | where: "path", path | first -%}
+
+      {%- if my_page.title -%}
+        <li class="nav-link">
+          <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</nav>

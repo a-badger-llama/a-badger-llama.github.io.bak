@@ -1,14 +1,19 @@
 ---
 layout: default.html
 ---
+{%- assign project = site.posts | where: "categories", "hero" | first -%}
+{%- assign posts = site.posts -%}
+
 <div class="container">
-  {%- assign project = site.posts | where: "categories", "hero" | first -%}
-  {%- include project-banner.html.liquid project=project -%}
+  {%- include cards/hero-banner.html.liquid project=project -%}
 </div>
 
 <div class="container">
-  {%- assign posts = site.posts | where: "categories", "blog" -%}
-  {%- include post-list.html.liquid classlist="post-list--index" list_title="Here's the latest" posts=posts -%}
+  <div class="content">
+    <h1 class="title">Here's the latest</h1>
+
+    {%- include post-list.html.liquid posts=posts -%}
+  </div>
 
   <div class="bulletin">
     <h1>News Bulletin</h1>
