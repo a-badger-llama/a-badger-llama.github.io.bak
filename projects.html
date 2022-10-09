@@ -2,9 +2,10 @@
 layout: default.html
 title: Projects
 nav_order: 1
+test:
 ---
 <div class="container">
-  {%- assign posts = site.posts | where: "categories", "projects" -%}
+  {% assign posts = site.posts | where: "categories", "projects" | where: "categories", "announcements" %}
 
   {%- include post-list.html.liquid posts=projects -%}
 </div>

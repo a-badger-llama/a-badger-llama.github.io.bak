@@ -1,0 +1,17 @@
+default: &default
+  nav-items:
+    - essays
+    - updates
+    - narratives
+    - announcements
+  nav-mapping:
+    essays: blog
+    updates: updates
+    narratives: teasers
+    announcements: announcements
+
+anthology:
+  <<: *default
+
+the-mind-of-gods:
+  <<: *default

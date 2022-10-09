@@ -1,4 +1,4 @@
-<div class="post-list">
+<div class="post-list {{ include.class-list }}" id="{{ include.id }}">
   {%- if posts.size > 0 -%}
     {%- for post in posts -%}
       {%- assign includes-card = "cards/" | append: post.type | append: ".html.liquid" -%}

@@ -32,13 +32,15 @@ excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - projects_generator
 
 # GLOBAL VARIABLES
 types:
-  - essay
-  - update
-  - narrative
-  - announcement
+  - essays
+  - updates
+  - narratives
+  - announcements
+signature_path: assets/images/signature.jpg
 
 # Exclude from processing.
 # The following items will not be processed, by default.

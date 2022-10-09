@@ -1,10 +1,27 @@
 ---
 layout: default.html
 ---
+{%- assign default_posts = site.posts | where: "categories", page.project -%}
+{%- assign data = site.data.projects[page.project] -%}
+{%- assign nav-mapping = data.nav-mapping -%}
+
 <div class="container">
   {%- assign project=page -%}
 
-  {%- include cards/announcement.html.liquid project=project -%}
+  {%- include cards/hero-banner.html.liquid project=project -%}
 </div>
 
-{% include project-nav.html.liquid %}
+{%- include project-nav.html.liquid page=page nav-mapping=nav-mapping -%}
+
+<div class="container">
+  {%- assign posts = default_posts -%}
+
+  {%- include post-list.html.liquid posts=posts id="all" -%}
+
+  {%- for mapping in nav-mapping -%}
+    {%- assign item = mapping[0] -%}
+    {%- assign posts = default_posts | where: "categories", item -%}
+
+    {%- include post-list.html.liquid posts=posts class-list="hidden" id=item -%}
+  {%- endfor -%}
+</div>
