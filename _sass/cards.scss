@@ -41,6 +41,12 @@
 
 .narrative-card {
   @include card;
+
+  .card-content {
+    p {
+      padding: 1rem 2rem;
+    }
+  }
 }
 
 .update-card {
