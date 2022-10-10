@@ -1,8 +1,5 @@
 <nav class="navbar container">
-  <div class="progress-bar">
-    {{ page.project }}
-  </div>
-
+  {%- include progress-bar.html.liquid title=page.title progress=progress -%}
   <ul class="nav-links nav-links--project">
     {%- for mapping in nav-mapping -%}
       <li><a href="#{{ mapping[0] }}" class="link-on-page">{{ mapping[1] }}</a></li>

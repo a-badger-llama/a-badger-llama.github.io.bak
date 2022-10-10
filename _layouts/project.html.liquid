@@ -4,6 +4,8 @@ layout: default.html
 {%- assign default_posts = site.posts | where: "categories", page.project -%}
 {%- assign data = site.data.projects[page.project] -%}
 {%- assign nav-mapping = data.nav-mapping -%}
+{%- assign latest_update = default_posts | where: "categories", "updates" | first -%}
+{%- assign progress = latest_update.progress -%}
 
 <div class="container">
   {%- assign project=page -%}
@@ -11,7 +13,7 @@ layout: default.html
   {%- include cards/hero-banner.html.liquid project=project -%}
 </div>
 
-{%- include project-nav.html.liquid page=page nav-mapping=nav-mapping -%}
+{%- include project-nav.html.liquid page=page nav-mapping=nav-mapping progress=progress -%}
 
 <div class="container">
   {%- assign posts = default_posts -%}

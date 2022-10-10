@@ -96,3 +96,27 @@ main {
 .hidden {
   display: none;
 }
+
+.progress-bar {
+  flex-basis: 40%;
+
+  .progress-bar--title {
+    flex-basis: 100%;
+  }
+  .progress-wrapper {
+    align-items: center;
+    display: flex;
+    font-size: .75rem;
+
+    .progress-bar--progress {
+      background-color: $brand-dark;
+      height: 100%;
+    }
+    .progress-bar--bar {
+      background-color: $off-white;
+      height: .5rem;
+      margin-right: 1rem;
+      width: 100%;
+    }
+  }
+}
