@@ -23,7 +23,6 @@ email: jonathan.fox1991@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The official website for Jonathan Fox. Here you can find the latest news and updates
   for all projects Jonathan is involved in.
-domain: a-badger-llama.github.io
 url: https://a-badger-llama.github.io
 excerpt_separator: <!--more-->
 
