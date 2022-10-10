@@ -7,5 +7,5 @@ test:
 <div class="container">
   {% assign posts = site.posts | where: "categories", "projects" | where: "categories", "announcements" %}
 
-  {%- include post-list.html.liquid posts=projects -%}
+  {%- include post-list.html.liquid posts=posts -%}
 </div>
