@@ -26,6 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 domain: a-badger-llama.github.io
 url: https://a-badger-llama.github.io
 baseurl: / # the subpath of your site, e.g. /blog
+permalink: /:title
 excerpt_separator: <!--more-->
 
 # Build settings
