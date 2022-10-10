@@ -61,6 +61,15 @@ main {
   width: 100%;
 }
 
+.social-media {
+  align-items: center;
+  border: $brand-dark 1px solid;
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  margin-top: 1rem;
+}
+
 .title {
   margin-bottom: 1rem;
 }
@@ -98,7 +107,7 @@ main {
 }
 
 .progress-bar {
-  flex-basis: 40%;
+  flex-basis: 100%;
 
   .progress-bar--title {
     flex-basis: 100%;
@@ -107,6 +116,7 @@ main {
     align-items: center;
     display: flex;
     font-size: .75rem;
+    margin: .25rem 1rem 0 1.25rem;
 
     .progress-bar--progress {
       background-color: $brand-dark;
@@ -119,4 +129,19 @@ main {
       width: 100%;
     }
   }
+}
+.nav-links--project {
+  border-left: 1px $brand-dark solid;
+}
+
+#decorative-box {
+  background-color: $brand-primary;
+  height: 15rem;
+  width: 10rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 50%;
+  margin-left: 19%;
+  z-index: -1;
 }

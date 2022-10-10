@@ -1,5 +1,5 @@
 @mixin card {
-  background-color: $off-white;
+  background-color: $off-white + f0;
   border-radius: 5px 0 0 5px;
   box-shadow: 2px 2px $brand-dark;
   display: flex;

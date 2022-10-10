@@ -1,6 +1,6 @@
 ---
 layout: default.html
-title: About
+title: Me
 nav_order: 0
 image_path: assets/images/profile_pic.jpg
 image_description: a picture of Jonathan Fox
@@ -42,11 +42,13 @@ image_description: a picture of Jonathan Fox
       pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices
       eros
     </p>
-    <img class="signature" src="{{ site.signature_path | relative_url }}"
-         alt="Jonathan's signature">
+    <div class="signature">
+      <img src="{{ site.signature_path | relative_url }}" alt="Jonathan's signature">
+    </div>
   </div>
   <div class="profile-pic">
     <img src="{{ page.image_path | relative_url }}" alt="page.image_discription">
+    {%- include social.html.liquid -%}
   </div>
 </div>
 
