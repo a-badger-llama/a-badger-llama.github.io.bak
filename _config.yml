@@ -25,8 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   for all projects Jonathan is involved in.
 domain: a-badger-llama.github.io
 url: https://a-badger-llama.github.io
-baseurl: /jonathan-fox # the subpath of your site, e.g. /blog
-permalink: /:title
+baseurl: / # the subpath of your site, e.g. /blog
 excerpt_separator: <!--more-->
 
 # Build settings
