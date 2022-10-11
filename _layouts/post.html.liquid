@@ -1,0 +1,46 @@
+---
+layout: default.html
+excerpt_separator: <!--more-->
+---
+<div class="post container">
+  <header class="post-header">
+    <div class="title-wrapper">
+      <h1 class="title">{{ page.title | escape }}</h1>
+      <div class="inline-social">Share Social Links</div>
+    </div>
+
+    <p class="post-meta">
+      <span class="post-author">{{ page.author }}</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {%- assign date_format = "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+    </p>
+    <div class="post-categories badge-wrapper">
+      {%- assign categories = page.categories -%}
+
+      <div>Categories:</div>
+      <ul class="badge-list">
+        {%- for category in categories -%}
+          <li><a href="#" class="badge">{{ category }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="post-tags badge-wrapper">
+      {%- assign tags = page.tags -%}
+
+      <div>Tags:</div>
+      <ul class="badge-list">
+        {%- for tag in tags -%}
+          <li><a href="#" class="badge">{{ tag }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <footer class="post-footer">
+    <div class="inline-social">Share Social Links</div>
+  </footer>
+</div>

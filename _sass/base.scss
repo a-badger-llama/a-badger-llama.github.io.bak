@@ -27,6 +27,18 @@ main {
   min-height: 100vh;
 }
 
+#decorative-box {
+  background-color: $brand-primary;
+  height: 15rem;
+  width: 10rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 50%;
+  margin-left: 19%;
+  z-index: -1;
+}
+
 .button {
   background-color: $brand-primary;
   border: none;
@@ -69,9 +81,20 @@ main {
   flex-basis: 100%;
   margin-top: 1rem;
 }
+.inline-social {
+  border: $brand-dark 1px solid;
+  padding: 1rem 3rem;
+}
 
 .title {
   margin-bottom: 1rem;
+}
+.title-wrapper {
+  display: flex;
+
+  .title {
+    flex-grow: 1;
+  }
 }
 
 .content {
@@ -134,14 +157,50 @@ main {
   border-left: 1px $brand-dark solid;
 }
 
-#decorative-box {
-  background-color: $brand-primary;
-  height: 15rem;
-  width: 10rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 50%;
-  margin-left: 19%;
-  z-index: -1;
+.post {
+  background-color: $off-white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  .post-header {
+    border-bottom: 1px $brand-dark solid;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .post-content {
+    padding-bottom: 1rem;
+  }
+  .post-footer {
+    border-top: 1px $brand-dark solid;
+    padding-top: 1rem;
+  }
+}
+.post-meta {
+  align-items: baseline;
+  display: flex;
+  font-style: italic;
+  margin-bottom: 1rem;
+
+  time {
+    font-size: .75rem;
+    margin-left: 1rem;
+  }
+}
+.badge-wrapper {
+  display: flex;
+  align-items: center;
+}
+.badge-list {
+  display: flex;
+
+  .badge {
+    background-color: $white;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: .70rem;
+    margin: .25rem;
+    padding: .4rem .6rem;
+  }
 }
