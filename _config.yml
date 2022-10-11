@@ -33,6 +33,7 @@ plugins:
   - projects_generator
 
 # GLOBAL VARIABLES
+date_format: "%b %-d, %Y"
 types:
   - essays
   - updates

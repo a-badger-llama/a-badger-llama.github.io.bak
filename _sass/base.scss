@@ -49,6 +49,11 @@ main {
   padding: .5rem 1rem;
 }
 
+
+.flex-wrapper {
+  display: flex;
+}
+
 .full-container {
   background-color: $off-white;
   display: flex;
@@ -103,15 +108,32 @@ main {
 }
 
 .bulletin {
-  align-items: center;
-  background-color: $yellow;
   border-radius: 5px;
-  box-shadow: -5px 5px $brand-dark;
-  display: flex;
-  justify-content: center;
   margin-top: 1rem;
-  margin-bottom: 50%;
   width: 30%;
+
+  a {
+    color: $brand-primary;
+    text-shadow: .2px .2px $brand-dark;
+    margin-right: 1rem;
+  }
+  li {
+    padding: .60rem 1rem;
+  }
+
+  .bulletin-items {
+    background-color: $yellow;
+    border-radius: 5px;
+    box-shadow: -5px 5px $brand-dark;
+    max-height: 50%;
+    overflow: scroll;
+  }
+  .bulletin-item {
+    align-items: baseline;
+    border-top: 1px $brand-dark dashed;
+    display: flex;
+    justify-content: right;
+  }
 }
 
 .side-filters {

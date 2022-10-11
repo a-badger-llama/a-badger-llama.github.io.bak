@@ -11,10 +11,7 @@ excerpt_separator: <!--more-->
 
     <p class="post-meta">
       <span class="post-author">{{ page.author }}</span>
-      <time datetime="{{ page.date | date_to_xmlschema }}">
-        {%- assign date_format = "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
+      {%- include date.html.liquid date=page.date-%}
     </p>
     <div class="post-categories badge-wrapper">
       {%- assign categories = page.categories -%}

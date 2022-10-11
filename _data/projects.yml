@@ -12,6 +12,8 @@ default: &default
 
 anthology:
   <<: *default
+  progress: 45
 
 the-mind-of-gods:
   <<: *default
+  progress: 30
