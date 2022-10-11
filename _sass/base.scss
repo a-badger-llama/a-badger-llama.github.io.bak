@@ -121,12 +121,19 @@ main {
     padding: .60rem 1rem;
   }
 
+  .bulletin-title {
+    margin: 1rem 0;
+  }
   .bulletin-items {
     background-color: $yellow;
     border-radius: 5px;
     box-shadow: -5px 5px $brand-dark;
-    max-height: 50%;
+    height: 100%;
     overflow: scroll;
+
+    &.bulletin-full {
+      height: 100%;
+    }
   }
   .bulletin-item {
     align-items: baseline;

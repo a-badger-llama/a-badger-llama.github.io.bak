@@ -4,8 +4,7 @@ layout: default.html
 {%- assign default_posts = site.posts | where: "categories", page.project -%}
 {%- assign data = site.data.projects[page.project] -%}
 {%- assign nav-mapping = data.nav-mapping -%}
-{%- assign latest_update = default_posts | where: "categories", "updates" | first -%}
-{%- assign progress = latest_update.progress -%}
+{%- assign progress = site.data.projects[page.project].progress -%}
 
 <div class="container">
   {%- assign project=page -%}

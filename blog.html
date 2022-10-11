@@ -6,13 +6,29 @@ nav_order: 3
 {%- assign posts = site.posts -%}
 
 <div class="container">
-  <div class="side-filters">
-    <h1>Search Filters</h1>
-  </div>
-
   <div class="content">
     <h1 class="title">Here's the latest</h1>
 
     {%- include post-list.html.liquid posts=posts -%}
+  </div>
+  <div class="bulletin bulletin-full">
+    <ul class="bulletin-items">
+      <li><h2 class="bulletin-title">Index</h2></li>
+
+      {%- for project in projects -%}
+        {%- assign title = project.title -%}
+        {%- assign progress = site.data.projects[project.project].progress -%}
+
+        <li>{%- include progress-bar.html.liquid title=title progress=progress -%}</li>
+      {%- endfor -%}
+
+      {%- for post in posts -%}
+        {%- assign date = post.date -%}
+
+        <li class="bulletin-item">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
   </div>
 </div>
