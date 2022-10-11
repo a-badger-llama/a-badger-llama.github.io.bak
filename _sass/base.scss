@@ -35,7 +35,7 @@ main {
   left: 0;
   top: 0;
   margin-top: 50%;
-  margin-left: 19%;
+  margin-left: 12%;
   z-index: -1;
 }
 
@@ -64,7 +64,7 @@ main {
 .container {
   display: flex;
   height: inherit;
-  width: 60vw;
+  width: 75vw;
   margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ main {
   border: $brand-dark 1px solid;
   display: flex;
   justify-content: center;
-  min-height: 35vh;
+  min-height: 50vh;
   width: 100%;
 }
 
@@ -126,7 +126,6 @@ main {
     border-radius: 5px;
     box-shadow: -5px 5px $brand-dark;
     height: 100%;
-    margin-right: 1rem;
     overflow: scroll;
 
     a {
