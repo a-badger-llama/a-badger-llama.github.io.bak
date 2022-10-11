@@ -113,9 +113,6 @@ main {
   width: 30%;
 
   a {
-    color: $brand-primary;
-    text-shadow: .2px .2px $brand-dark;
-    margin-right: 1rem;
   }
   li {
     padding: .60rem 1rem;
@@ -129,10 +126,12 @@ main {
     border-radius: 5px;
     box-shadow: -5px 5px $brand-dark;
     height: 100%;
+    margin-right: 1rem;
     overflow: scroll;
 
-    &.bulletin-full {
-      height: 100%;
+    a {
+      color: $brand-primary;
+      text-shadow: .2px .2px $brand-dark;
     }
   }
   .bulletin-item {
@@ -163,6 +162,7 @@ main {
 
   .progress-bar--title {
     flex-basis: 100%;
+    color: $brand-dark;
   }
   .progress-wrapper {
     align-items: center;

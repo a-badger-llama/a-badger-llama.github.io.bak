@@ -16,21 +16,5 @@ layout: default.html
     {%- include post-list.html.liquid posts=posts -%}
   </div>
 
-  <div class="bulletin">
-    <ul class="bulletin-items">
-      {%- for project in projects -%}
-        {%- assign title = project.title -%}
-        {%- assign progress = site.data.projects[project.project].progress -%}
-
-        <li>{%- include progress-bar.html.liquid title=title progress=progress -%}</li>
-      {%- endfor -%}
-
-      {%- for post in posts -%}
-        {%- assign date = post.date -%}
-        <li class="bulletin-item">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </li>
-      {%- endfor -%}
-    </ul>
-  </div>
+  {%- include bulletin.html.liquid posts=posts project=project -%}
 </div>

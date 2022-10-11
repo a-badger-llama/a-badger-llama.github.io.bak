@@ -1,0 +1,18 @@
+<div class="bulletin">
+  <ul class="bulletin-items">
+    {%- for project in projects -%}
+      {%- assign title = project.title -%}
+      {%- assign progress = site.data.projects[project.project].progress -%}
+      {%- assign link = project.url | relative_url -%}
+
+      <li>{%- include progress-bar.html.liquid title=title progress=progress link=link -%}</li>
+    {%- endfor -%}
+
+    {%- for post in posts -%}
+      {%- assign date = post.date -%}
+      <li class="bulletin-item">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
