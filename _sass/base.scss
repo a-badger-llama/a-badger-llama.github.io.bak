@@ -1,7 +1,8 @@
 // COLORS
 $brand-dark: #040c16;
 $brand-primary: #cc2e37;
-$white: #ddd;
+$brand-primary-dark: #9e0509;
+$white: #edd;
 $off-white: #f8f8f9;
 $yellow: #e7b07e;
 
@@ -25,18 +26,6 @@ body {
 
 main {
   min-height: 100vh;
-}
-
-#decorative-box {
-  background-color: $brand-primary;
-  height: 15rem;
-  width: 10rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 50%;
-  margin-left: 12%;
-  z-index: -1;
 }
 
 .button {
@@ -74,6 +63,7 @@ main {
   border: $brand-dark 1px solid;
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
   min-height: 50vh;
   width: 100%;
 }
@@ -103,19 +93,17 @@ main {
 }
 
 .content {
-  margin-top: 1rem;
   width: 70%;
 }
 
 .bulletin {
   border-radius: 5px;
-  margin-top: 1rem;
+  box-shadow: 2px 2px $brand-primary-dark;
+  margin: 0 0 2rem 2rem;
   width: 30%;
 
-  a {
-  }
   li {
-    padding: .60rem 1rem;
+    padding: 0 1rem;
   }
 
   .bulletin-title {
@@ -124,20 +112,19 @@ main {
   .bulletin-items {
     background-color: $yellow;
     border-radius: 5px;
-    box-shadow: -5px 5px $brand-dark;
     height: 100%;
     overflow: scroll;
+    padding-top: 1rem;
 
     a {
       color: $brand-primary;
-      text-shadow: .2px .2px $brand-dark;
     }
   }
   .bulletin-item {
     align-items: baseline;
     border-top: 1px $brand-dark dashed;
     display: flex;
-    justify-content: right;
+    padding: .60rem 1rem;
   }
 }
 
@@ -160,8 +147,8 @@ main {
   flex-basis: 100%;
 
   .progress-bar--title {
-    flex-basis: 100%;
     color: $brand-dark;
+    flex-basis: 100%;
   }
   .progress-wrapper {
     align-items: center;
