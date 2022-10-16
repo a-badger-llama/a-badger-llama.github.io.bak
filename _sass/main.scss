@@ -14,3 +14,16 @@ $yellow: #e7b07e;
 // INCLUDES
 @import "header";
 @import "hero-banner";
+
+img.mobile-screen {
+  display: flex;
+}
+
+@media (min-width: 800px) {
+  img.lg-screen {
+    display: flex;
+  }
+  img.mobile-screen {
+    display: none;
+  }
+}
