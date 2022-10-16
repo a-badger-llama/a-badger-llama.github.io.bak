@@ -10,11 +10,11 @@
 }
 
 .title-banner {
-  background-color: $brand-dark + dd;
+  background-color: $brand-dark;
   color: $white;
   display: flex;
   font: 3rem Teko;
-  height: 1.25em;
+  height: $header-height;
 
   .logo {
     display: flex;
@@ -34,7 +34,7 @@
 .navbar {
   align-content: space-around;
   align-items: center;
-  background-color: $white + dd;
+  background-color: $white;
   display: none;
   flex-wrap: wrap;
   font-family: Oswald, sans-serif;
