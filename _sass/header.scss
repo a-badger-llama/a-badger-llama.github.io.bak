@@ -1,55 +1,115 @@
+.header {
+  position: fixed;
+  width: 100%;
+
+  .menu-btn {
+    position: absolute;
+    top: .60rem;
+    right: .65rem;
+  }
+}
+
 .title-banner {
-  background-color: $brand-dark;
+  background-color: $brand-dark + dd;
   color: $white;
   display: flex;
   font: 3rem Teko;
-  height: 2em;
-  justify-content: center;
+  height: 1.25em;
 
   .logo {
-    align-items: center;
     display: flex;
-    justify-content: center;
-  }
 
-  .logo-text {
-    display: inline-block;
-    font: inherit;
-  }
-
-  .logo-img {
-    height: 100%;
+    .logo-img {
+      height: 120%;
+      position: relative;
+    }
+    .logo-text {
+      display: inline-block;
+      font: inherit;
+      height: 100%;
+    }
   }
 }
 
 .navbar {
+  align-content: space-around;
   align-items: center;
-  display: flex;
+  background-color: $white + dd;
+  display: none;
+  flex-wrap: wrap;
   font-family: Oswald, sans-serif;
   justify-content: space-between;
 
   .call-to-action {
-    margin: 0 2em;
+    margin: 0 auto 1rem auto;
+    width: 70%;
   }
 
   .nav-links {
-    align-self: stretch;
     display: inherit;
+    flex-basis: 100%;
+    justify-content: flex-end;
 
     .nav-link {
-      align-items: stretch;
       display: inline-block;
 
-      &:hover {
-        color: $brand-primary;
+      a {
+        display: inline-block;
+        padding: 1.5em 2em;
       }
     }
+  }
+}
 
-    a {
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      padding: 1.5em 2em;
+@media (min-width: 800px) {
+  .container {
+    width: 75vw;
+  }
+
+  .header {
+    position: static;
+
+    .menu-btn {
+      display: none;
+    }
+  }
+
+  .title-banner {
+    background-color: $brand-dark;
+    height: 2em;
+    justify-content: center;
+
+    .logo {
+      align-items: center;
+      justify-content: center;
+
+      .logo-img {
+        height: 100%;
+      }
+      .logo-text {
+        height: auto;
+      }
+    }
+  }
+
+  .navbar {
+    background-color: $white;
+    display: flex;
+
+    .call-to-action {
+      width: auto;
+      margin: 0 2em;
+    }
+
+    .nav-links {
+      flex-basis: auto;
+      justify-content: center;
+
+      .nav-link {
+        &:hover {
+          color: $brand-primary;
+        }
+      }
     }
   }
 }

@@ -1,14 +1,16 @@
-<header>
+<header class="header">
   <div class="title-banner">
     <a href="{{ site.url | relative_url }}" class="logo">
-      <h1 class="logo-text">{{ site.title | escape }}</h1>
       <img src="{{ "assets/images/foxlogo.png" | relative_url }}" alt="fox-logo" class="logo-img">
+
+      <h1 class="logo-text">{{ site.title | escape }}</h1>
     </a>
+
+    <h2 class="menu-btn"><i class="fa-solid fa-bars"></i></h2>
   </div>
 
   <nav class="navbar container">
-    {%- assign default_paths = site.pages | sort: "nav_order" | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign page_paths = site.pages | where: "header", true | sort: "nav_order" | map: "path" -%}
 
     <ul class="nav-links">
       {%- for path in page_paths -%}

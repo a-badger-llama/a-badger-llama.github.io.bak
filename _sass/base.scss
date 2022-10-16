@@ -1,15 +1,4 @@
-// COLORS
-$brand-dark: #040c16;
-$brand-primary: #cc2e37;
-$brand-primary-dark: #9e0509;
-$white: #e8e3e0;
-$off-white: #f8f8f9;
-$yellow: #e7b07e;
 
-// UTILITIES
-@import "fonts";
-// INCLUDES
-@import "header";
 @import "footer";
 @import "post-list";
 @import "cards";
@@ -53,7 +42,6 @@ main {
 .container {
   display: flex;
   height: inherit;
-  width: 75vw;
   margin: 0 auto;
 }
 

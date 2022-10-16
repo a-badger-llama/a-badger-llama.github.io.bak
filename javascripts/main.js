@@ -15,4 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   }
+
+  let menuButton = document.getElementsByClassName("menu-btn")[0]
+
+  menuButton.addEventListener("click", (e) => {
+    let display = document.getElementsByClassName("navbar")[0].style.display;
+    if (display == "flex") {
+      display = "none";
+    } else {
+      display = "flex";
+    }
+
+    document.getElementsByClassName("navbar")[0].style.display = display;
+  });
 });
