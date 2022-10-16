@@ -19,11 +19,48 @@ img.mobile-screen {
   display: flex;
 }
 
+.bulletin {
+  display: none;
+}
+
 @media (min-width: 800px) {
   img.lg-screen {
     display: flex;
   }
   img.mobile-screen {
     display: none;
+  }
+
+  .bulletin {
+    border-radius: 5px;
+    box-shadow: 2px 2px $brand-primary-dark;
+    display: block;
+    margin: 0 0 2rem 2rem;
+    width: 100%;
+
+    li {
+      padding: 0 1rem;
+    }
+
+    .bulletin-title {
+      margin: 1rem 0;
+    }
+    .bulletin-items {
+      background-color: $yellow;
+      border-radius: 5px;
+      height: 100%;
+      overflow: scroll;
+      padding-top: 1rem;
+
+      a {
+        color: $brand-primary;
+      }
+    }
+    .bulletin-item {
+      align-items: baseline;
+      border-top: 1px $brand-dark dashed;
+      display: flex;
+      padding: .60rem 1rem;
+    }
   }
 }
